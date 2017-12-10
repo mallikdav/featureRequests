@@ -1,6 +1,6 @@
 # featureRequests
 
-Feature Request App: 
+## Feature Request App: 
 
 OS Ubuntu
 
