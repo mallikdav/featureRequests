@@ -2,7 +2,10 @@
 
 Feature Request App: OS Ubuntu
 Python 2.7.12
+
+
 Installation Steps:
+
 • On terminal run below command
 • sudo apt-get update && sudo apt-get -y upgrade • sudo apt-get install python-pip
 • pip install -r requirements.txt
