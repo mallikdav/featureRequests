@@ -7,9 +7,11 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from marshmallow_jsonapi.flask import Schema, Relationship
 from marshmallow_jsonapi import fields
+from flask_cors import CORS
 
 # Create the Flask application
 app = Flask(__name__)
+CORS(app)
 app.config['DEBUG'] = True
 
 
