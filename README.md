@@ -22,64 +22,61 @@ Python 2.7.12
 • Pagination - If List API has more that 30 object, the JSON will automatically put the page urls
 in link hash.
 
-• "links": {
-
-"first": "/clients",
-"last": "/clients?page%5Bnumber%5D=2", "prev": "/clients?page%5Bnumber%5D=1", "self": "/clients?page%5Bnumber%5D=2" },
+- "links": {"first": "/clients", "last": "/clients?page%5Bnumber%5D=2", "prev": "/clients?page%5Bnumber%5D=1", "self": "/clients?page%5Bnumber%5D=2" },
 
 • Sorting - One can sort the response using -
 
-- • http://127.0.0.1:5000/clients?sort=name 
+- http://127.0.0.1:5000/clients?sort=name 
 
-- • http://127.0.0.1:5000/clients?sort=-name
+- http://127.0.0.1:5000/clients?sort=-name
 
-- • Search - One can search by -
+- Search - One can search by -
 
-- • GET /clients?filter=[{“name”:”field_name”,”op":"operator","val":"field_value”}] 
+- GET /clients?filter=[{“name”:”field_name”,”op":"operator","val":"field_value”}] 
 
-- • GET /clients?filter=[{“name”:"name","op":"eq","val":"Client B”}]
+- GET /clients?filter=[{“name”:"name","op":"eq","val":"Client B”}]
 
-- • Common available operators:
+- Common available operators:
 
-- • any: used to filter on to many relationships
+- any: used to filter on to many relationships
 
-- • between: used to filter a field between two values
+- between: used to filter a field between two values
 
-- • endswith: check if field ends with a string
+- endswith: check if field ends with a string
 
-- • eq: check if field is equal to something
+- eq: check if field is equal to something
 
-- • ge: check if field is greater than or equal to something
+- ge: check if field is greater than or equal to something
 
-- • gt: check if field is greater than to something
+- gt: check if field is greater than to something
 
-- • has: used to filter on to one relationships
+- has: used to filter on to one relationships
 
-- • ilike: check if field contains a string (case insensitive)
+- ilike: check if field contains a string (case insensitive)
 
-- • in_: check if field is in a list of values
+- in_: check if field is in a list of values
 
-- • is_: check if field is a value
+- is_: check if field is a value
 
-- • isnot: check if field is not a value
+- isnot: check if field is not a value
 
-- • like: check if field contains a string
+- like: check if field contains a string
 
-- • le: check if field is less than or equal to something
+- le: check if field is less than or equal to something
 
-- • lt: check if field is less than to something
+- lt: check if field is less than to something
 
-- • match: check if field match against a string or pattern
+- match: check if field match against a string or pattern
 
-- • ne: check if field is not equal to something
+- ne: check if field is not equal to something
 
-- • notilike: check if field does not contains a string (case insensitive)
+- notilike: check if field does not contains a string (case insensitive)
 
-- • notin_: check if field is not in a list of values
+- notin_: check if field is not in a list of values
 
-- • notlike: check if field does not contains a string
+- notlike: check if field does not contains a string
 
-- • startswith: check if field starts with a string
+- startswith: check if field starts with a string
     
 ## ALL APIS:
  
