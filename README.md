@@ -1,6 +1,6 @@
-# featureRequests
+# featureRequestsApp
 
-## Feature Request App: 
+## Env: 
 
 OS Ubuntu
 
